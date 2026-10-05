@@ -1,0 +1,22 @@
+client_name: client_b
+sheet_name: Customers
+
+required_source_columns:
+  - id
+  - fname
+  - lname
+
+column_mapping:
+  id: customer_id
+  fname: first_name
+  lname: last_name
+  birth_date: date_of_birth
+  mobile_number: phone
+  email: email
+  street_address: address
+  municipality: city
+  region: state_province
+  zip: postal_code
+  country_name: country
+
+defaults: {}
