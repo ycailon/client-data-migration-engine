@@ -1,0 +1,23 @@
+client_name: client_a
+sheet_name: null
+
+required_source_columns:
+  - Customer ID
+  - First Name
+  - Last Name
+
+column_mapping:
+  Customer ID: customer_id
+  First Name: first_name
+  Last Name: last_name
+  DOB: date_of_birth
+  Mobile: phone
+  Email Address: email
+  Address: address
+  City: city
+  Province: state_province
+  Postal Code: postal_code
+  Country: country
+
+defaults:
+  country: Philippines
