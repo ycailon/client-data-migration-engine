@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: migration
+      POSTGRES_USER: migration
+      POSTGRES_PASSWORD: migration
+    ports:
+      - "5432:5432"
+    volumes:
+      - migration_postgres:/var/lib/postgresql/data
+      - ./sql/create_tables.sql:/docker-entrypoint-initdb.d/01-create-tables.sql:ro
+
+volumes:
+  migration_postgres:
